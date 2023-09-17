@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                width: 30%;
+                margin: auto;
+                padding: 100px;
+            }
+
+
+            #main{
+                text-align: center;
+                background-color: orangered;
+                color: white;
+                padding: 25px;
+            }
+
+            #btn{
+                padding: 10px;
+                width: 85px;
+                font-size: 20px;
+                background-color: blue;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+
+            #container{
+                margin-top: 15px;
+                font-size: 20px;
+            }
+        </style>
+
+
+        <script>
+            const add = () =>{
+                let a = document.getElementById("name").value;
+                let temp = "";
+                temp = temp + "<p>" + a + "</p>";
+                document.getElementById("container").innerHTML = temp;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <h1 style="font-size: 35px;"> To-Do List - Basic </h1>
+            <p style="font-size: 25px;">Enter The Task: <input type="text" placeholder="Enter The Task" id="name" style="padding: 5px; font-size: 15px;"/></p>
+            <button onclick="add()" id="btn"> Add </button>
+
+
+            <div id="container">...</div>
+        </div>
+    </body>
+</html>
